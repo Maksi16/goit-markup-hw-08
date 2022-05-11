@@ -1,0 +1,41 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+.header__conteiner {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  margin-right: 93px;
+  color: #000;
+}
+.header__contact {
+  display: flex;
+  margin-left: auto;
+}
+.contact-header__item:not(:last-child) {
+  margin-right: 50px;
+}
+.contact-header__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contact-header__link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $secondColor;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $brandColor;
+  }
+}
