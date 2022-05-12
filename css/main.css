@@ -417,7 +417,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 32px 30px 32px;
+  padding: 0 122px 24px 122px;
+}
+@media screen and (min-width: 768px) {
+  .master-soc-list {
+    padding: 0 74px 24px 74px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .master-soc-list {
+    padding: 0 32px 30px 32px;
+  }
 }
 
 .master-soc-link {

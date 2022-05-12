@@ -35,9 +35,6 @@
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 4 - 30px);
   }
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
 }
 .team__img {
   width: auto;
@@ -66,7 +63,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 32px 30px 32px;
+  padding: 0 122px 24px 122px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 74px 24px 74px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 32px 30px 32px;
+  }
 }
 .master-soc-link {
   width: 44px;
