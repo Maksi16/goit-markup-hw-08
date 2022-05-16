@@ -1,24 +1,44 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
+
 .header__conteiner {
-  // display: flex;
-  // align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .header__logo {
-  margin-right: 93px;
+  margin-right: 88px;
   color: #000;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .header__contact {
   display: none;
-  // display: flex;
-  // margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .contact-header__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 .contact-header__icon {
   margin-right: 10px;
@@ -29,8 +49,8 @@
   align-items: center;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: $secondColor;
 
@@ -39,5 +59,9 @@
   &:hover,
   &:focus {
     color: $brandColor;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }

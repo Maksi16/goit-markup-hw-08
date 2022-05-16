@@ -9,8 +9,11 @@
   &:focus {
     fill: $brandColor;
   }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
-.mob_menu {
+.mob-menu {
   position: fixed;
   background-color: #fff;
   top: 0;
@@ -18,14 +21,18 @@
   width: 100vw;
   height: 100vh;
 }
-.mob-menu_icon {
-  margin-bottom: 10px;
+.mob-menu_box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: scroll;
 }
 .mob-menu_list {
   margin-top: 8px;
   margin-left: 40px;
-  margin-bottom: 306px;
 }
+
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -47,7 +54,7 @@
   display: block;
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: $brandColor;
@@ -61,6 +68,19 @@
 }
 .mob-menu__soc {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 40px;
   margin-bottom: 48px;
+}
+.mob-menu__soc-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+}
+.mob-menu__soc-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $brandColor;
 }

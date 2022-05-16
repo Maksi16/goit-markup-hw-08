@@ -105,6 +105,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .subscription__form {
   @media screen and (min-width: 1200px) {
