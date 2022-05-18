@@ -2,6 +2,9 @@
   padding: 60px 0;
   background-color: #2f303a;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .footer__conteiner {
   @media screen and (min-width: 1200px) {
@@ -50,6 +53,9 @@
 .footer__socials {
   @media screen and (min-width: 480px) {
     margin-top: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
